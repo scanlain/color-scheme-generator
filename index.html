@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <title>Color Schema Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="color-input-params">
+        <input
+          type="color"
+          name="color-input"
+          id="color-input"
+          aria-label="color-input"
+        />
+
+        <select id="mode-select" class="select-sm">
+          <option value="monochrome" selected>Monochrome</option>
+          <option value="monochrome-light">Monochrome Light</option>
+          <option value="monochrome-dark">Monochrome Dark</option>
+          <option value="analogic">Analogic</option>
+          <option value="analogic-complement">Analogic Complement</option>
+          <option value="triad">Triad</option>
+          <option value="quad">Quad</option>
+        </select>
+
+        <button class="submit-btn">Get color schema</button>
+      </div>
+
+      <div class="color-schemas">
+        <div class="color-details">
+          <div class="color-shade"></div>
+          <div class="color-hex-code"></div>
+        </div>
+        <div class="color-details">
+          <div class="color-shade"></div>
+          <div class="color-hex-code"></div>
+        </div>
+        <div class="color-details">
+          <div class="color-shade"></div>
+          <div class="color-hex-code"></div>
+        </div>
+        <div class="color-details">
+          <div class="color-shade"></div>
+          <div class="color-hex-code"></div>
+        </div>
+      </div>
+
+      <script src="./scripts.js"></script>
+    </div>
+  </body>
+</html>
